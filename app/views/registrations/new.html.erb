@@ -1,5 +1,6 @@
  
 <%= form_for(:registrations, url: sign_in_path) do |f| %>
+  <%= render 'shared/error_messages' %>
 	<div class="form-group">
 	    <%= f.label :name, "Name" %>
 	    <%= f.text_field :name %>
